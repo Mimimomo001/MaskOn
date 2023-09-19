@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroung">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:layout_width="69dp"
+            android:layout_height="67dp"
+            android:background="@drawable/rest"
+            android:onClick="restart" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="67dp"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:layout_width="69dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/cancel"
+            android:onClick="exit" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/newHighest"
+            android:background="@drawable/cup"
+            android:visibility="gone"/>
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TableRow
+                android:layout_marginTop="15sp"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_marginBottom="15sp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="YOUR POINTS: "
+                    android:fontFamily="@font/dogicabold"
+                    android:textSize="15sp"
+                    android:textColor="#713ECD"/>
+                <TextView
+                    android:id="@+id/point"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="50"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/dogicabold"
+                    android:textColor="#713ECD" />
+            </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="HIGHEST: "
+                    android:textColor="#713ECD"
+                    android:fontFamily="@font/dogicabold"
+                    android:textSize="24sp"
+                    android:layout_gravity="center|right"/>
+                <TextView
+                    android:id="@+id/highest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="100"
+                    android:textColor="#713ECD"
+                    android:fontFamily="@font/dogicabold"
+                    android:textSize="24sp"/>
+            </TableRow>
+        </TableLayout>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="80dp"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>

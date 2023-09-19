@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/backgroung"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/title"/>
+    <TextView
+        android:layout_marginTop="2sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#713ECD"
+        android:text="A 2D DODGING GAME BY TABASSUM"
+        android:fontFamily="@font/dogicabold"
+        android:textSize="11sp"/>
+
+    <ImageView
+        android:layout_width="94dp"
+        android:layout_height="107dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="40dp"
+        app:srcCompat="@drawable/mh" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="START"
+        android:fontFamily="@font/dogicabold"
+        android:textColor="@color/white"
+        android:backgroundTint="#713ECD"
+        android:onClick="stG"/>
+
+
+
+</LinearLayout>
